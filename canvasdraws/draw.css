@@ -1,0 +1,16 @@
+img {
+    height: 400px;
+}
+body {
+    display: flex;
+}
+main {
+    width: 500px;
+}
+label {
+    display: block;
+}
+canvas {
+    width: 370.8px;
+    height: 190px;
+}

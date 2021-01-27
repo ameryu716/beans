@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="draw.css">
+    <title>draws</title>
+</head>
+<body>
+    <main>
+        <label><input type="range" id="startx" min="0" max="1000" value="0" >元画像の切り抜き開始地点x</label>
+        <label><input type="range" id="starty" min="0" max="1000" value="0" >元画像の切り抜き開始地点y</label>
+        <label><input type="range" id="rangex" min="0" max="1000" value="0" >開始地点から切りぬく幅</label>
+        <label><input type="range" id="rangey" min="0" max="1000" value="0" >開始地点から切りぬく幅</label>
+
+        <label><input type="range" id="altstartx" min="0" max="1000" value="0" >キャンバスへの貼り付け開始地点x</label>
+        <label><input type="range" id="altstarty" min="0" max="1000" value="0" >キャンバスへの貼り付け開始地点y</label>
+        <label><input type="range" id="altrangex" min="0" max="1000" value="0" >キャンバスへの貼り付け領域x</label>
+        <label><input type="range" id="altrangey" min="0" max="1000" value="0" >キャンバスへの貼り付け領域y</label>
+        <button onclick="drawstart()">開始</button>
+    </main>
+    <aside>
+        <img src="./horo.jpg" id="horoimg">
+    </aside>
+    
+    <script src="./draw.js"></script>
+</body>
+</html>
