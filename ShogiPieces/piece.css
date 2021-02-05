@@ -1,0 +1,84 @@
+/* 将棋駒 */
+.piece {
+    width: 500px;
+    height: 600px;
+    transform-style: preserve-3d;
+    perspective-origin: center;
+    transition: 0.1s;
+    position: absolute;
+    transform: rotate3d(1,1,0,45deg);
+}
+.piece .surface {
+    border-color: rgba(0,0,0,0.9);
+}
+/* 表面 */
+.surface1 {
+    height: 600px;
+    width: 500px;
+    background-color: burlywood;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(50% 0, 100% 20%,100% 100%, 0% 100%, 0 20%);
+}
+.surface1 span {
+    display: block;
+    padding: 13% 24% 5%;
+    font-size: 256px;
+    font-family: "Sawarabi Mincho",serif;
+    font-weight: bold;
+    line-height: 1;
+}
+/* 上面 */
+.surface2{
+    top: -12px;
+    left: -1px;
+    width: 60px;
+    height: 10px;
+    background-color: red;
+    transform-origin: bottom;
+    transform: rotateX(90deg);
+}
+/* 左面 */
+.surface3 {
+    top: -1px;
+    left: -12px;
+    width: 10px;
+    height: 100px;
+    background-color: blue;
+    transform-origin: right;
+    transform: rotateY(-90deg);
+}
+/* 右面 */
+.surface4 {
+    top: -1px;
+    right: -12px;
+    width: 10px;
+    height: 100px;
+    background-color: green;
+    transform-origin: left;
+    transform: rotateY(90deg);
+}
+/* 下面 */
+.surface5 {
+    bottom: -12px;
+    left: -1px;
+    width: 60px;
+    height: 10px;
+    background-color: yellow;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+}
+/* 底面 */
+.surface6 {
+    left: -1px;
+    top: -1px;
+    background-color: coral;
+    width: 60px;
+    height: 100px;
+    transform: translateZ(-11px);
+}
+
+#polygon {
+    
+}
