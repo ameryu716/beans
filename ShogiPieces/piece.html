@@ -9,19 +9,57 @@
 </head>
 <body>
     <div id="wrap">
-        <div id="pieces">
-            <div class="piece">
-                <div class="surface surface1">
+        <main>
+            <div class="piece" id="rotater">
+                <!-- 表面 -->
+                <div class="surface surface1" id="named-surface">
                     <span>玉<br>将</span>
                 </div>
+                <!-- 右斜面 -->
                 <div class="surface surface2"></div>
+                <!-- 右面 -->
                 <div class="surface surface3"></div>
+                <!-- 下面 -->
                 <div class="surface surface4"></div>
+                <!-- 左面 -->
                 <div class="surface surface5"></div>
+                <!-- 左斜面 -->
                 <div class="surface surface6"></div>
-            </div>`
-        </div>
+                <!-- 裏面 -->
+                <div class="surface surface7"></div>
+            </div>
+        </main>
+        <aside>
+            <div id="nameinput" class="piece-adjuster">
+                <label for="piecename"><span>駒の名前</span><input type="text" name="piecename" id="piecename" value="王将"></label>
+            </div>
+            <div id="sizeinput" class="piece-adjuster">
+                <label for="piecesize"><span>字のサイズ</span><input type="range" max="512" min="16" name="piecesize" id="piecesize" value="256"><span id="sizer">256px</span></label>
+            </div>
+            <div id="piece-r-direc" class="piece-adjuster">
+                <label for="piecedirec"><span>回転方向</span><span id="direc-b">正</span><input type="checkbox" name="piecedirec" id="piecedirec" checked="checked"></label>
+            </div>
+            <div id="piece-r-amount" class="piece-adjuster">
+                <label for="r-amount"><span>回転量</span><input type="range" max="360" min="0" name="r-amount" id="r-amount" value="20"><span id="amouterspan">20deg</span></label>
+            </div>
+            <div id="TXmarginlist" class="piece-adjuster">
+                <span id="piece-marger-span">駒名の上下余白</span>
+                <ul>
+                    <li>
+                        <div id="textmarger1" class="textmarger">
+                            <label for="topmarger" id="topm-label"><span>駒名上余白</span><input type="range" max="30" min="0" name="topmarger" id="topmarger" value="13"><span id="margertopspan">13%</span></label>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="textmarger2" class="textmarger">
+                            <label for="leftmarger" id="leftm-label"><span>駒名左余白</span><input type="range" max="30" min="0" name="leftmarger" id="leftmarger" value="24"><span id="margerleftspan">24%</span></label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
         
     </div>
+    <script src="./piece.js"></script>
 </body>
 </html>
