@@ -178,10 +178,15 @@ input#piecename {
         flex-direction: column;
     }
     main,aside {
-        height: 50%;
+        height: 100%;
         width: 100%;
-        position: relative;
+        position: absolute;
         transform-origin: 25% top;
         transform: scale(0.5);
+    }
+    aside {
+        background-color: rgba(255,255,255,0.5);
+        width: 190%;
+        transform-origin: left bottom;
     }
 }
