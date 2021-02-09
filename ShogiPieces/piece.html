@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="piece.css">
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-alpha.12/dist/html2canvas.min.js"></script>
     <title>将棋駒</title>
 </head>
 <body>
+    <header>
+        <h1>将棋の駒ジェネレーター</h1>
+        <small>from &copy;<a href="https://willwebgame.com">willwebgame.com</a></small>
+    </header>
     <div id="wrap">
         <main>
-            <h1>将棋の駒ジェネレーター</h1>
             <div class="piece" id="rotater">
                 <!-- 表面 -->
                 <div class="surface surface1" id="named-surface">
@@ -58,9 +62,16 @@
                     </li>
                 </ul>
             </div>
+            <div>
+                <button id="screenshot">
+                    撮る
+                </button>
+            </div>
         </aside>
-        
     </div>
+    <footer>
+        <small>from &copy;<a href="https://willwebgame.com">willwebgame.com</a>&nbsp;2021</small>
+    </footer>
     <script src="./piece.js"></script>
 </body>
 </html>

@@ -1,32 +1,34 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+}
 ul {
     list-style: none;
     margin-top: 15px;
 }
-#wrap {
+a {
+    text-decoration: none;
+    color: lightseagreen;
+}
+header {
     display: flex;
+    justify-content: space-between;
+    height: 100px;
     width: 100%;
-    height: 98vh;
+    padding: 25px 50px;
+    border-bottom: solid 2px #80808040;
+    box-sizing: border-box;
 }
-main {
-    width: 50%;
-    height: 100%;
+header small {
+    margin-top: 40px;
+    font-size: 16px;
 }
-aside {
-    width: 50%;
-    height: 100%;
-}
-aside>div {
-    margin: 10px 0 30px 20%;
-}
-main h1 {
-    position: absolute;
-    z-index: 1;
-    top: 12px;
-    left: 30px;
-    background-color: rgba(255,255,255,0.3);
+h1 {
     margin: 0px;
     font-size: 36px;
     line-height: 1;
+    margin-left: 10px;
+    position: relative;
 }
 h1::before {
     content: "";
@@ -39,11 +41,46 @@ h1::before {
     left: -14px;
     top: -7px;
 }
-.piece-adjuster {
-    width: 400px;
-    height: 65px;
-    font-size: 36px;
+footer {
+    width: 100%;
+    height: 75px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    color: #ddd;
+    font-size: 24px;
+    padding-top: 20px;
+    box-sizing: border-box;
 }
+footer small a {
+    color: #ddd;
+}
+footer small a:hover {
+    color: #eee;
+}
+
+#wrap {
+    display: flex;
+    height: 700px;
+    margin: 40px auto;
+    width: 1100px;
+}
+main {
+    width: 60%;
+    height: 100%;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+}
+aside {
+    width: 40%;
+    height: 100%;
+}
+aside>div {
+    margin: 10px 0 30px 20%;
+    width: 400px;
+    height: 50px;
+    font-size: 24px;
+}
+
+
 .piece-adjuster label {
     display: flex;
     width: inherit;
@@ -83,7 +120,25 @@ input#piecename {
     height: 50px;
     margin: 10px;
 }
-
+#TXmarginlist {
+    height: auto;
+}
+#screenshot {
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    color: #fff;
+    border: transparent 2px solid;
+    transition: 0.3s;
+}
+#screenshot:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: cornflowerblue;
+    border: solid 2px cornflowerblue;
+}
 
 
 
@@ -96,7 +151,7 @@ input#piecename {
     transition: 0.1s;
     position: absolute;
     transform: rotate3d(1,1,0,20deg);
-    margin-left: 50px;
+    margin: 30px 70px;
 }
 .piece .surface {
     box-sizing: border-box;
