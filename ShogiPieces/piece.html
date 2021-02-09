@@ -5,14 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="piece.css">
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-alpha.12/dist/html2canvas.min.js"></script>
-    <title>将棋駒</title>
+    
+    <link rel="canonical" href="https://shogikoma.vercel.app/piece.html">
+    <!-- icon -->
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="320x320" href="https://shogikoma.vercel.app/favicon.png">
+
+
+
+    <!-- card meta -->
+    <meta property="og:title" content="将棋の駒ジェネレーター">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shogikoma.vercel.app/piece.html">
+    <meta property="og:image" content="https://shogikoma.vercel.app/favicon.png">
+    <meta property="og:description" content="自由な将棋の駒のシミュレーション">
+    <meta property="og:site_name" content="将棋の駒ジェネレーター">
+    <meta name="twitter:card" content="summary">
+
+
+    <title>将棋の駒ジェネレーター</title>
 </head>
 <body>
     <header>
         <h1>将棋の駒ジェネレーター</h1>
         <small>from &copy;<a href="https://willwebgame.com">willwebgame.com</a></small>
     </header>
+    <div id="help">
+        <p>お好きな将棋の駒を（画面上で）作れるジェネレーターです。スクショとかでどうぞ共有してやってください。</p>
+        <p>操作コンソールで駒の名前、字のサイズ、3D的に回転なども出来ます。（PCをお使いなら[Z]キーか[X]キーで回転できます）</p>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="我、将棋の駒なり。" data-hashtags="将棋の駒ジェネレーター" data-lang="ja" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
     <div id="wrap">
         <main>
             <div class="piece" id="rotater">
@@ -63,9 +85,7 @@
                 </ul>
             </div>
             <div>
-                <button id="screenshot">
-                    撮る
-                </button>
+                <img src="./favicon.png" alt="マスコット歩兵君">
             </div>
         </aside>
     </div>

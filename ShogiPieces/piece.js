@@ -13,8 +13,6 @@ window.addEventListener("load",()=>{
     const leftmargerspan = document.getElementById("margerleftspan");
     const sizer = document.getElementById("sizer");
 
-    const screenshot = document.getElementById("screenshot");
-
 
     let degr =20;
     let piecedirecNum = 1;
@@ -77,18 +75,4 @@ window.addEventListener("load",()=>{
         leftmargerspan.innerText = leftmarger.value + "%";
     }
 
-    screenshot.onclick = ()=>{
-        const main = document.getElementsByTagName("main");
-        const randomStr5 = String(Math.floor(Math.random()*99999)+1).substr(0,5);//ランダム5
-        
-        html2canvas(main[0])
-        .then((canvas)=>{
-            canvas.crossOrigin = "Anonymous";
-            //保存
-            const dc = document.createElement("a");
-            dc.download = "shogikoma"+randomStr5+".png";
-            dc.href = canvas.toDataURL("shogikoma"+randomStr5+"/png");
-            dc.click();
-        })
-    }
 })
