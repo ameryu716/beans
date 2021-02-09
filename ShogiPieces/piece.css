@@ -252,9 +252,30 @@ input#piecename {
 
 
 @media screen and (max-width: 480px){ 
+    header {
+        flex-wrap: wrap;
+        padding: 10px 5px 0 10px;
+    }
+    h1 {
+        font-size: 5.5vw;
+    }
+    h1::before {
+        height: 27px;
+        width: 7px;
+        left: -15px;
+    }
+    header small {
+        margin: 20px 0 0 44%;
+    }
+    #help {
+        width: auto;
+        padding: 10px;
+    }
     #wrap {
+        width: auto;
         height: 100vh;
         flex-direction: column;
+        position: relative;
     }
     main,aside {
         height: 100%;
@@ -263,25 +284,40 @@ input#piecename {
         transform-origin: 25% top;
         transform: scale(0.5);
     }
+    main {
+        height: 110vh;
+        width: 180vw;
+        transform-origin: 5% top;
+    }
     aside {
         background-color: rgba(255,255,255,0.5);
         width: 190%;
+        height: auto;
         transform-origin: left bottom;
+        bottom: 0;
+        left: 2%;
     }
-    main h1 {
-        top: 0px;
-        left: -70px;
-        margin: 0px;
-        font-size: 10vw;
-    }
-    h1::before {
-        height: 50px;
-        width: 10px;
-        margin-right: 10px;
-        left: -20px;
-        top: -7px;
+    aside>div {
+        width: auto;
+        margin-left: 2%;
     }
     .piece {
-        margin-left: 0;
+        margin: 0;
+        left: 13%;
+        top: 6%;
+    }
+    #hoheikun {
+        position: absolute;
+        right: 0;
+        bottom: 10%;
+        height: auto;
+    }
+    #hoheikun img {
+        filter: drop-shadow(2px 4px 6px rgba(131,100,40,0.8));
+    }
+    footer {
+        font-size: 4vw;
+        height: 50px;
+        padding-top: 14px;
     }
 }
