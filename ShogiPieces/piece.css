@@ -270,6 +270,17 @@ input#piecename {
     #help {
         width: auto;
         padding: 10px;
+        position: relative;
+    }
+    #hoheikun {
+        position: absolute;
+        right: 6%;
+        bottom: -5%;
+        height: auto;
+    }
+    #hoheikun img {
+        filter: drop-shadow(2px 4px 6px rgba(131,100,40,0.8));
+        height: 80px;
     }
     #wrap {
         width: auto;
@@ -296,6 +307,8 @@ input#piecename {
         transform-origin: left bottom;
         bottom: 0;
         left: 2%;
+        display: flex;
+        flex-wrap: wrap;
     }
     aside>div {
         width: auto;
@@ -306,14 +319,17 @@ input#piecename {
         left: 13%;
         top: 6%;
     }
-    #hoheikun {
-        position: absolute;
-        right: 0;
-        bottom: 10%;
-        height: auto;
+    #piece-r-direc {
+        margin-left: 10%;
     }
-    #hoheikun img {
-        filter: drop-shadow(2px 4px 6px rgba(131,100,40,0.8));
+    #sizeinput input {
+        width: 126vw;
+    }
+    #piece-r-amount input {
+        width: 139vw;
+    }
+    #TXmarginlist input {
+        width: 114vw;
     }
     footer {
         font-size: 4vw;

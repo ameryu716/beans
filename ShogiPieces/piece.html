@@ -33,6 +33,9 @@
     <div id="help">
         <p>お好きな将棋の駒を（画面上で）作れるジェネレーターです。スクショとかでどうぞ共有してやってください。</p>
         <p>操作コンソールで駒の名前、字のサイズ、3D的に回転なども出来ます。（PCをお使いなら[Z]キーか[X]キーで回転できます）</p>
+        <div id="hoheikun">
+            <img src="./favicon.png" alt="マスコット歩兵君">
+        </div>
         <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="我、将棋の駒なり。" data-hashtags="将棋の駒ジェネレーター" data-lang="ja" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
     <div id="wrap">
@@ -60,12 +63,13 @@
             <div id="nameinput" class="piece-adjuster">
                 <label for="piecename"><span>駒の名前</span><input type="text" name="piecename" id="piecename" value="玉将"></label>
             </div>
-            <div id="sizeinput" class="piece-adjuster">
-                <label for="piecesize"><span>字のサイズ</span><input type="range" max="512" min="16" name="piecesize" id="piecesize" value="256"><span id="sizer">256px</span></label>
-            </div>
             <div id="piece-r-direc" class="piece-adjuster">
                 <label for="piecedirec"><span>回転方向</span><span id="direc-b">正</span><input type="checkbox" name="piecedirec" id="piecedirec" checked="checked"></label>
             </div>
+            <div id="sizeinput" class="piece-adjuster">
+                <label for="piecesize"><span>字のサイズ</span><input type="range" max="512" min="16" name="piecesize" id="piecesize" value="256"><span id="sizer">256px</span></label>
+            </div>
+            
             <div id="piece-r-amount" class="piece-adjuster">
                 <label for="r-amount"><span>回転量</span><input type="range" max="360" min="0" name="r-amount" id="r-amount" value="20"><span id="amouterspan">20deg</span></label>
             </div>
@@ -83,9 +87,6 @@
                         </div>
                     </li>
                 </ul>
-            </div>
-            <div id="hoheikun">
-                <img src="./favicon.png" alt="マスコット歩兵君">
             </div>
         </aside>
     </div>
